@@ -16,7 +16,6 @@ services:
             - ./databases:/data/db
             - ./mongod.conf:/etc/mongod.conf
             - ./initdb.d/:/docker-entrypoint-initdb.d/
-            - ./databases/:/data/db/
             - ./log:/var/log/mongodb/
         expose:
             - 27017
